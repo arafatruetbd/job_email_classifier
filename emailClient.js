@@ -27,7 +27,7 @@ function fetchEmails(callback) {
         if (err || !results || results.length === 0) return callback([]);
 
         const emails = [];
-        const fetchIds = results.slice(0, 5); // ✅ Limit to 50 emails
+        const fetchIds = results.slice(0, 50); // ✅ Limit to 50 emails
         const f = imap.fetch(fetchIds, { bodies: "", markSeen: true }); // ✅ Mark seen
 
         f.on("message", (msg) => {
