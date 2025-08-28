@@ -1,5 +1,5 @@
 
-````markdown
+
 # job_email_classifier
 
 A Node.js application that fetches unseen emails from the last 24 hours via IMAP, classifies them using the OpenRouter API (LLM), extracts job-related information, and exports the results to an Excel file.
@@ -31,7 +31,7 @@ A Node.js application that fetches unseen emails from the last 24 hours via IMAP
    ```bash
    git clone https://github.com/arafat.ruet.bd/job_email_classifier.git
    cd job_email_classifier
-````
+
 
 2. Install dependencies:
 
